@@ -1,0 +1,39 @@
+# Kaggle raw data — too large (5GB+), download manually from Kaggle
+data/raw/
+
+# Processed CSVs — reproducible by running data_preprocessing.py
+data/processed/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# TF logs
+logs/
+
+# Trained model binaries — too large for git (regenerate by running model scripts)
+results/models/
+
+# Claude Code internal settings
+.claude/

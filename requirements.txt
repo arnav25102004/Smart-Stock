@@ -1,0 +1,14 @@
+tensorflow>=2.12
+prophet
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+transformers
+torch
+datasets
+tokenizers
+onnxruntime
+openpyxl
+optimum[onnxruntime]
