@@ -1,0 +1,162 @@
+sentence,language,intent,product_mentioned,predicted
+current stock of chawal batao now,Code-Mixed,check_stock,rice,check_stock
+stock kaise check karein now,Hindi,help,unknown,help
+kal kitna rice bikega predict karo quickly,Code-Mixed,get_prediction,rice,get_prediction
+expected sales for flour tomorrow,English,get_prediction,flour,get_prediction
+hege start maadali,Kannada,help,dal,help
+sakkare bedu andaaja haaki,Kannada,get_prediction,sugar,get_prediction
+show guide now,English,help,unknown,help
+nearly empty items now,English,low_stock_alert,unknown,low_stock_alert
+zero stock kaun sa hai please,Hindi,low_stock_alert,unknown,low_stock_alert
+chips stock eshtu,Kannada,check_stock,unknown,check_stock
+25 kg atta order karo,Hindi,add_stock,flour,add_stock
+next week ka demand batao abhi,Code-Mixed,get_prediction,unknown,get_prediction
+kapde dhone ka powder daalo,Hindi,add_stock,unknown,add_stock
+emergency reorder needed for which items now,English,low_stock_alert,unknown,low_stock_alert
+hittu 5 kg haaku,Kannada,add_stock,flour,add_stock
+angadi saamanu check maadi,Kannada,check_stock,unknown,check_stock
+ella item bedu heli now,Kannada,get_prediction,unknown,get_prediction
+guide please dikhao quickly,Code-Mixed,help,unknown,help
+kothambari eshtu baaki,Kannada,check_stock,unknown,check_stock
+how to get started now,English,help,unknown,help
+makhan ka naya stock daalo,Hindi,add_stock,unknown,add_stock
+chawal ki bikri ka andaza do,Hindi,get_prediction,rice,get_prediction
+kaun sa maal nahi bacha,Hindi,low_stock_alert,unknown,low_stock_alert
+tuppada stock eshtu ide,Kannada,check_stock,ghee,check_stock
+show guide,English,help,unknown,help
+peanut kitna bacha hai,Hindi,check_stock,unknown,check_stock
+ella item stock tilikoli,Kannada,check_stock,unknown,check_stock
+sabbu 100 haaku please now,Code-Mixed,add_stock,soap,add_stock
+add soap to inventory please,English,add_stock,soap,add_stock
+urgent items kya hain today,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+oil remaining kitna hai abhi please,Code-Mixed,check_stock,oil,check_stock
+yaav items low ide batao quickly,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+stock warning do abhi quickly,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+ee vaara enu aaagabeku please,Kannada,get_prediction,unknown,get_prediction
+help with this system please,English,help,unknown,help
+ella item bedu heli please,Kannada,get_prediction,unknown,get_prediction
+alert do low items ke liye please,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+stock update karo after delivery asap,Code-Mixed,add_stock,unknown,add_stock
+alert do low items ke liye,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+7 dina ge stock eshtu irabeku please,Kannada,get_prediction,unknown,get_prediction
+help chahiye kaise use karu jaldi,Code-Mixed,help,unknown,help
+dal stock kya show karega quickly,Code-Mixed,check_stock,dal,check_stock
+sales prediction for rice,English,get_prediction,rice,get_prediction
+aaj kya order karna padega abhi,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+upayoga vidhana heli now,Kannada,help,unknown,help
+predict sales for tomorrow please abhi,Code-Mixed,get_prediction,unknown,get_prediction
+kal ka hisab lagao,Hindi,get_prediction,unknown,get_prediction
+dal packet eshtu ide,Kannada,check_stock,dal,check_stock
+sugar restock karo urgent,Code-Mixed,add_stock,sugar,add_stock
+bring more biscuits please,English,add_stock,unknown,add_stock
+emergency reorder needed for which items please,English,low_stock_alert,unknown,low_stock_alert
+stock kaise check karein quickly,Hindi,help,unknown,help
+habba alli eshtu biku please,Kannada,get_prediction,unknown,get_prediction
+stock mugiyutte ide yaav now,Kannada,low_stock_alert,unknown,low_stock_alert
+masala bharo,Hindi,add_stock,unknown,add_stock
+hosa stock haaku system alli please,Kannada,add_stock,unknown,add_stock
+tel ka dabba aaya hai daldo,Hindi,add_stock,dal,add_stock
+enu available ide,Kannada,check_stock,unknown,check_stock
+guide dikhao,Hindi,help,unknown,help
+check expired items,English,check_stock,unknown,check_stock
+emergency mein kya order karu now,Hindi,low_stock_alert,unknown,low_stock_alert
+sugar kitna hai currently quickly,Code-Mixed,check_stock,sugar,check_stock
+enne stock remaining eshtu,Code-Mixed,check_stock,oil,check_stock
+do we have detergent,English,check_stock,unknown,check_stock
+predict oil consumption now,English,get_prediction,oil,get_prediction
+kaunsa item kam ho raha hai,Hindi,low_stock_alert,unknown,low_stock_alert
+sakkare eshtu remaining quickly,Code-Mixed,check_stock,sugar,check_stock
+naye user ke liye guide abhi,Code-Mixed,help,unknown,help
+add 10 kg rice please,English,add_stock,rice,add_stock
+aLavo kama stock yaav now,Kannada,low_stock_alert,unknown,low_stock_alert
+stock khatam hone wala kaun sa,Hindi,low_stock_alert,unknown,low_stock_alert
+urgent order yaav item ge,Kannada,low_stock_alert,unknown,low_stock_alert
+sab ka inventory status do,Code-Mixed,check_stock,unknown,check_stock
+100 sabun dalo,Hindi,add_stock,dal,add_stock
+ella item bedu heli,Kannada,get_prediction,unknown,get_prediction
+add 10 kg rice,English,add_stock,rice,add_stock
+agle hafte sugar ki demand kya hogi now,Hindi,get_prediction,sugar,get_prediction
+stock hege check maadali,Kannada,help,dal,help
+hittu stock heli please,Kannada,check_stock,flour,check_stock
+hege use maadali please tell me quickly,Code-Mixed,help,dal,help
+features kya hain explain karo please,Code-Mixed,help,unknown,help
+we need to reorder eggs please,English,add_stock,unknown,add_stock
+flour stock level,English,check_stock,flour,check_stock
+bedu andaaja beku now,Kannada,get_prediction,unknown,get_prediction
+zero stock kaun sa hai now,Hindi,low_stock_alert,unknown,low_stock_alert
+stock alert do,Hindi,low_stock_alert,unknown,low_stock_alert
+sakkare stock jaasti maadi please,Kannada,add_stock,sugar,add_stock
+we need more milk please,English,add_stock,milk,add_stock
+naye user ke liye guide please,Code-Mixed,help,unknown,help
+help chahiye kaise use karu please,Code-Mixed,help,unknown,help
+restocking needed immediately,English,add_stock,oil,add_stock
+benne eshtu baaki,Kannada,check_stock,oil,check_stock
+jaldi order chahiye kaun se item mein please,Hindi,low_stock_alert,unknown,low_stock_alert
+what needs restocking,English,check_stock,unknown,add_stock
+sabbu eshtu ide,Kannada,check_stock,soap,check_stock
+bele 10 kg add please quickly,Code-Mixed,add_stock,dal,add_stock
+smartstock kya hai,Hindi,help,unknown,help
+urgent stock alert needed,English,low_stock_alert,unknown,low_stock_alert
+what will be milk demand please,English,get_prediction,milk,get_prediction
+guide dikhao now,Hindi,help,unknown,help
+nange sahaya beku,Kannada,help,unknown,help
+current tomato count,English,check_stock,unknown,check_stock
+guide tilikoli now,Kannada,help,unknown,help
+is there enough atta,English,check_stock,flour,check_stock
+stock low hai kya aaj abhi,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+stock prediction for next 7 days jaldi,Code-Mixed,get_prediction,unknown,get_prediction
+khaali hone wale items batao please,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+cold drink order karo please,Hindi,add_stock,unknown,add_stock
+show me how to start,English,help,unknown,help
+hosa maal haaku please,Kannada,add_stock,unknown,add_stock
+dal ka forecast batao please,Hindi,get_prediction,dal,get_prediction
+onion price and stock,English,check_stock,rice,check_stock
+jaldi khatam ho raha kaunsa now,Hindi,low_stock_alert,unknown,low_stock_alert
+predict high demand items now,English,get_prediction,unknown,get_prediction
+mujhe madad chahiye now,Hindi,help,unknown,help
+help chahiye kaise use karu abhi,Code-Mixed,help,unknown,help
+tutorial chahiye help karo abhi,Code-Mixed,help,unknown,help
+namkeen kitni bachi hai,Hindi,check_stock,unknown,check_stock
+chawal ki bikri ka andaza do please,Hindi,get_prediction,rice,get_prediction
+milk stock add karo please,Code-Mixed,add_stock,milk,add_stock
+help with alerts now,English,help,unknown,help
+item kaise daale now,Hindi,help,unknown,help
+minimum stock threshold crossed,English,low_stock_alert,unknown,low_stock_alert
+how to set minimum stock now,English,help,unknown,help
+aaj kya order karna padega quickly,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+stock update karo after delivery today,Code-Mixed,add_stock,unknown,add_stock
+kal kitna rice bikega predict karo abhi,Code-Mixed,get_prediction,rice,get_prediction
+ghee badhao stock mein please,Hindi,add_stock,ghee,add_stock
+kya khareedna chahiye next week ke liye now,Code-Mixed,get_prediction,unknown,get_prediction
+enne upayoga eshtu aagutte quickly,Kannada,get_prediction,oil,get_prediction
+quick stock check,English,check_stock,unknown,check_stock
+urgent items kya hain jaldi,Code-Mixed,low_stock_alert,unknown,low_stock_alert
+sakkare eshtu remaining please,Code-Mixed,check_stock,sugar,check_stock
+munde vaara sakkare bedu eshtu,Kannada,get_prediction,sugar,get_prediction
+kya almost khatam hai now,Hindi,low_stock_alert,unknown,low_stock_alert
+bandha maal system alli haaku,Kannada,add_stock,unknown,add_stock
+sabbu eshtu ide tell me please,Code-Mixed,check_stock,oil,check_stock
+badam stock eshtu,Kannada,check_stock,unknown,check_stock
+kya khareedna chahiye next week ke liye,Code-Mixed,get_prediction,unknown,get_prediction
+coffee eshtu ide,Kannada,check_stock,unknown,check_stock
+stock prediction for next 7 days now,Code-Mixed,get_prediction,unknown,get_prediction
+milk stock add karo,Code-Mixed,add_stock,milk,add_stock
+getting started please help now,Code-Mixed,help,unknown,help
+sabudana eshtu baaki,Kannada,check_stock,unknown,check_stock
+how to check stock please,English,help,unknown,help
+enu mugiyutte ide please,Kannada,low_stock_alert,unknown,low_stock_alert
+predict top selling items now,English,get_prediction,unknown,get_prediction
+inventory update hege maadali now,Kannada,help,dal,help
+add cold drink bottles please,English,add_stock,unknown,add_stock
+jasti bikuna item heli now,Kannada,get_prediction,unknown,get_prediction
+20 kg godhi kharidi please,Kannada,add_stock,unknown,add_stock
+enne 5 litre haaku stock mein today,Code-Mixed,add_stock,oil,add_stock
+10 kg chawal add karo,Hindi,add_stock,rice,add_stock
+which products are critically low now,English,low_stock_alert,unknown,low_stock_alert
+naya maal add karo system mein,Code-Mixed,add_stock,unknown,add_stock
+stock prediction for next 7 days asap,Code-Mixed,get_prediction,unknown,get_prediction
+naale yaav mugiyutte,Kannada,low_stock_alert,unknown,low_stock_alert
+stock alert kodu now,Kannada,low_stock_alert,unknown,low_stock_alert
+remaining stock report,English,check_stock,unknown,check_stock
+getting started guide now,English,help,unknown,help
+bele forecast heli now,Kannada,get_prediction,dal,get_prediction

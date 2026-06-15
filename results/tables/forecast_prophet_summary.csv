@@ -1,0 +1,2 @@
+Model,MAPE (%),RMSE,MAE,Training_Time_s,Inference_Time_ms,Model_Size_KB
+Prophet,18.64,325.5496,226.3614,2.0,0.2755,125.45

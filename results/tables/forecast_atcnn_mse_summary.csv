@@ -1,0 +1,2 @@
+Model,MAPE (%),RMSE,MAE,Training_Time_s,Inference_Time_ms,Model_Size_KB
+AT-CNN (MSE),15.93,331.2546,224.5415,49.37,1.1212,407.46

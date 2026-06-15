@@ -1,0 +1,2 @@
+Model,MAPE (%),RMSE,MAE,Training_Time_s,Inference_Time_ms,Model_Size_KB
+LSTM,16.7,322.536,215.9532,86.51,1.3266,391.49

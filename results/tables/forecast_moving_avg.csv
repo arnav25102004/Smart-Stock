@@ -1,0 +1,5 @@
+Model,Family,MAPE (%),RMSE,MAE,Training_Time_s,Inference_Time_ms,Model_Size_KB
+Moving Average,GROCERY I,30.87,835.606,588.0406,0.0,0.0136,0.0
+Moving Average,DAIRY,28.04,206.6694,151.978,0.0,0.0083,0.0
+Moving Average,BEVERAGES,28.28,626.6392,463.1238,0.0,0.0103,0.0
+Moving Average,CLEANING,38.55,226.0263,168.0972,0.0,0.0061,0.0
