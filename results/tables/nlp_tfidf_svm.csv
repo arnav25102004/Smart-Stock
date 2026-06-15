@@ -1,0 +1,2 @@
+Model,Accuracy (%),F1 (macro),Precision (macro),Recall (macro),Training_Time_s,Inference_Time_ms,Model_Size_KB,Code-Mixed_Acc,Hindi_Acc,English_Acc,Kannada_Acc
+TF-IDF + SVM,99.38,0.9938,0.9939,0.9939,0.1,0.0456,360.04,100.0,100.0,97.37,100.0

@@ -1,0 +1,21 @@
+input,language,detected_intent,detected_product,response,latency_ms
+how much rice is left,English,check_stock,rice,Current rice stock is 15.5 kg.,12.6183
+add 10 kg sugar,English,add_stock,sugar,Stock updated. Added to sugar inventory.,0.6899
+predict dal demand tomorrow,English,get_prediction,dal,Predicted demand for dal tomorrow: 4039.9 kg.,489.9874
+which items are low,English,low_stock_alert,rice,LOW STOCK ALERT: none,0.695
+how do I use this,English,help,rice,SmartStock helps you: check stock | add stock | get predictions | view alerts.,0.4536
+chawal kitna bacha hai,Hindi,check_stock,rice,Abhi chawal ka stock 15.5 kg hai.,0.4224
+cheeni ka stock badhao,Hindi,add_stock,sugar,cheeni ka stock update ho gaya.,0.4098
+kal ki dal ki demand batao,Hindi,get_prediction,dal,Kal dal ki maang lagbhag 4039.9 kg hogi.,73.0335
+kaunsa item khatam ho raha,Hindi,low_stock_alert,rice,LOW STOCK ALERT: none — jaldi order karo!,0.7703
+kaise use karu,Hindi,help,rice,"SmartStock se aap: stock check, stock add, demand predict, aur alerts dekh sakte hain.",0.5501
+akki eshtu ide,Kannada,check_stock,rice,akki stock 15.5 kg ide.,0.548
+sakkare haaku,Kannada,add_stock,sugar,sakkare stock update aagide.,0.7001
+naale bele forecast heli,Kannada,get_prediction,dal,Naale bele bedu andaaja 4039.9 kg.,69.0502
+yaav item low stock ide,Kannada,low_stock_alert,rice,LOW STOCK: none — jaldi order maadi!,0.6542
+hege upayogisu,Kannada,help,rice,"SmartStock inda: stock nodari, haakari, predict maadari, alerts nodari.",0.4415
+rice ka stock check karo,Code-Mixed,check_stock,rice,rice ka stock 15.5 kg hai abhi.,0.4275
+sugar 10 kg add maadi please,Code-Mixed,add_stock,sugar,sugar stock updated hai.,0.4172
+dal prediction please batao,Code-Mixed,get_prediction,dal,dal ki predicted demand kal 4039.9 kg hai.,88.9552
+stock low hai kya alert do,Code-Mixed,low_stock_alert,rice,Low stock alert: none — order karo please!,0.6688
+help chahiye please tell me,Code-Mixed,help,oil,"SmartStock use karke: check stock, add stock, predictions lo, alerts dekho.",0.5241

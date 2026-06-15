@@ -1,0 +1,2 @@
+Model,MAPE (%),RMSE,MAE,Training_Time_s,Inference_Time_ms,Model_Size_KB
+Moving Average (7-day),31.44,473.7352,342.8099,0.0,0.0096,0.0

@@ -1,0 +1,3 @@
+Model,English Acc (%),Hindi Acc (%),Kannada Acc (%),Code-Mixed Acc (%),Overall Acc (%),F1 (macro),Model_Size_KB,Inference_Time_ms
+Rule-Based,68.42,42.42,65.12,68.09,62.11,0.6133,0.0,0.0089
+TF-IDF + SVM,97.37,100.0,100.0,100.0,99.38,0.9938,360.04,0.0456

@@ -1,0 +1,6 @@
+,check_stock,add_stock,get_prediction,low_stock_alert,help
+check_stock,32,0,0,0,0
+add_stock,1,32,0,0,0
+get_prediction,0,0,32,0,0
+low_stock_alert,0,0,0,32,0
+help,0,0,0,0,32

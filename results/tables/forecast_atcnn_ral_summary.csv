@@ -1,0 +1,2 @@
+Model,MAPE (%),RMSE,MAE,Training_Time_s,Inference_Time_ms,Model_Size_KB
+AT-CNN (RAL),17.88,336.9615,227.2602,45.31,1.1047,407.29

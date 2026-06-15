@@ -1,0 +1,2 @@
+Model,Accuracy (%),F1 (macro),Precision (macro),Recall (macro),Inference_Time_ms,Model_Size_KB,Code-Mixed_Acc,Hindi_Acc,English_Acc,Kannada_Acc
+Rule-Based,62.11,0.6133,0.7205,0.6191,0.0089,0.0,68.09,42.42,68.42,65.12
