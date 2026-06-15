@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTSTOCK Dashboard</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0F172A',
+                        cardBg: '#1E293B',
+                        accent: '#3B82F6',
+                        textMain: '#F8FAFC',
+                        success: '#22C55E',
+                        warning: '#EAB308',
+                        danger: '#EF4444'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-darkBg text-textMain min-h-screen p-4 md:p-8 font-sans">
+    
+    <!-- 1. HEADER -->
+    <header class="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 pb-4 border-b border-gray-700 gap-4">
+        <div>
+            <h1 class="text-3xl font-bold tracking-tight">SMARTSTOCK</h1>
+            <p class="text-gray-400 mt-1">Multilingual AIoT Inventory Management</p>
+        </div>
+        <div class="flex items-center space-x-2 bg-cardBg px-4 py-2 rounded-full border border-gray-600 shadow-sm">
+            <span class="w-3 h-3 rounded-full bg-success animate-pulse box-shadow-glow"></span>
+            <span class="text-sm font-medium text-success">System Online</span>
+        </div>
+    </header>
+    
+    <main class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+        
+        <!-- 2. MULTILINGUAL QUERY BOX (Left Column) -->
+        <section class="xl:col-span-1 bg-cardBg rounded-xl p-6 border border-gray-700 flex flex-col h-[650px] shadow-lg">
+            <h2 class="text-xl font-semibold mb-4 text-accent flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                AI Assistant
+            </h2>
+            
+            <div id="chat-window" class="flex-1 overflow-y-auto space-y-4 mb-4 pr-2 flex flex-col">
+                <!-- Welcome Message -->
+                <div class="bg-gray-800 rounded-lg rounded-tl-none p-3 max-w-[85%] self-start border border-gray-700 text-sm shadow-sm bubble-enter">
+                    Namaste! Ask me about the inventory in Hindi, Kannada or English.
+                </div>
+            </div>
+            
+            <div class="mt-auto">
+                <div class="flex flex-wrap gap-2 mb-3" id="suggestion-chips">
+                    <!-- Suggestion Chips -->
+                    <button class="chip text-xs bg-gray-800 border border-gray-600 hover:border-accent hover:text-accent px-3 py-1.5 rounded-full transition-all text-gray-300">chawal kitna bacha hai</button>
+                    <button class="chip text-xs bg-gray-800 border border-gray-600 hover:border-accent hover:text-accent px-3 py-1.5 rounded-full transition-all text-gray-300">akki eshtu ide</button>
+                    <button class="chip text-xs bg-gray-800 border border-gray-600 hover:border-accent hover:text-accent px-3 py-1.5 rounded-full transition-all text-gray-300">how much rice is left</button>
+                    <button class="chip text-xs bg-gray-800 border border-gray-600 hover:border-accent hover:text-accent px-3 py-1.5 rounded-full transition-all text-gray-300">dal prediction batao</button>
+                </div>
+                <form id="query-form" class="flex w-full space-x-2 relative">
+                    <input type="text" id="query-input" class="flex-1 bg-gray-900 border border-gray-600 rounded-lg pl-4 pr-12 py-3 text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all text-white placeholder-gray-500" placeholder="Ask in Hindi, Kannada or English..." autocomplete="off" required>
+                    <button type="submit" class="absolute right-2 top-1.5 bottom-1.5 bg-accent hover:bg-blue-600 text-white px-3 rounded text-sm font-medium transition-colors flex items-center justify-center">
+                        Send
+                    </button>
+                </form>
+                <div class="text-xs text-gray-500 mt-2 ml-1">e.g. chawal kitna bacha hai / akki eshtu ide / how much rice is left</div>
+            </div>
+        </section>
+        
+        <!-- Right Column for Panels -->
+        <div class="xl:col-span-2 flex flex-col space-y-8">
+            
+            <!-- 3. STOCK LEVELS PANEL -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-gray-200 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    Live Inventory Status
+                </h2>
+                <div id="stock-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Cards will be injected by app.js -->
+                </div>
+            </section>
+            
+            <!-- 4. DEMAND FORECAST PANEL -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4 text-gray-200 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+                    Tomorrow's Predicted Demand
+                </h2>
+                <div id="forecast-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Cards will be injected by app.js -->
+                </div>
+            </section>
+            
+            <!-- 5. MODEL PERFORMANCE PANEL -->
+            <section class="mt-auto">
+                <h2 class="text-xl font-semibold mb-4 text-gray-200 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    AI Model Results
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Table 1: Forecasting -->
+                    <div class="bg-cardBg rounded-xl p-5 border border-gray-700 shadow-md">
+                        <h3 class="text-xs font-bold text-gray-400 mb-3 uppercase tracking-wider">Forecasting Model Comparison</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <thead class="text-gray-400 border-b border-gray-700">
+                                    <tr>
+                                        <th class="pb-2 font-medium">Model</th>
+                                        <th class="pb-2 font-medium">MAPE</th>
+                                        <th class="pb-2 font-medium">Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-800 border-b border-gray-800">
+                                    <tr class="hover:bg-gray-800/50"><td class="py-2.5">Moving Avg</td><td>31.44%</td><td class="text-gray-500">0 KB</td></tr>
+                                    <tr class="hover:bg-gray-800/50"><td class="py-2.5">Prophet</td><td>18.64%</td><td class="text-gray-500">125 KB</td></tr>
+                                    <tr class="hover:bg-gray-800/50"><td class="py-2.5">LSTM</td><td>16.70%</td><td class="text-gray-500">391 KB</td></tr>
+                                    <tr class="text-success font-medium bg-success/10 border-l-2 border-success"><td class="py-2.5 pl-2">CNN ✓</td><td>15.87%</td><td>231 KB</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Table 2: NLP Classification -->
+                    <div class="bg-cardBg rounded-xl p-5 border border-gray-700 shadow-md">
+                        <h3 class="text-xs font-bold text-gray-400 mb-3 uppercase tracking-wider">NLP Classification Model Comparison</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <thead class="text-gray-400 border-b border-gray-700">
+                                    <tr>
+                                        <th class="pb-2 font-medium">Model</th>
+                                        <th class="pb-2 font-medium">Accuracy</th>
+                                        <th class="pb-2 font-medium">Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-800 border-b border-gray-800">
+                                    <tr class="hover:bg-gray-800/50"><td class="py-2.5">Rule-Based</td><td>62.11%</td><td class="text-gray-500">0 KB</td></tr>
+                                    <tr class="text-success font-medium bg-success/10 border-l-2 border-success"><td class="py-2.5 pl-2">TF-IDF+SVM ✓</td><td>99.38%</td><td>360 KB</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
